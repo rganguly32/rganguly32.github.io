@@ -1,2 +1,2 @@
 # tv-close
-do not sit too close tot he tv
+do not sit too close to the tv
