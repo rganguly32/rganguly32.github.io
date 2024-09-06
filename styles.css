@@ -1,0 +1,225 @@
+/* Reset some default styles */
+body, h1, ul {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 120px;
+}  
+
+body {
+    background: whitesmoke;
+    height: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    position: relative; /* Ensure sections are positioned correctly */
+    z-index: 1; /* Default stacking order */
+}
+
+.content {
+    padding: 20px;
+    margin-top: 120px;
+}
+
+h2, h3 {
+    color: #048448;
+    justify-content: center; 
+    text-align: center;
+}
+
+h3 {
+    color: #008D6F;
+}
+
+/* Navigation Bar */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #048448;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 40px; /* Space between the links */
+}
+
+nav ul li {
+    position: relative; /* Important for dropdown positioning */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove the underline */
+    color: white;
+    font-size: 1.2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: lightgreen; /* Add a hover effect */
+}
+
+/* Logo styling */
+.logo img {
+    height: 60px; /* Adjust the height of the logo */
+    width: auto;
+    margin-right: auto; /* Align logo to the left */
+}
+
+/* Dropdown Menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #048448;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 100%; /* Position it below the "Hobbies" link */
+    left: 0;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.dropdown-content a:hover {
+    background-color: lightgreen;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown when hovering over "Services" */
+}
+
+/* Title */
+.title-container {
+    margin-top: 30px; /* Push the title below the nav bar */
+    text-align: center;
+    padding: 50px 20px;
+    /* height: 100vh; */
+    align-items: center;
+}
+
+.title-container h1 {
+    font-size: 3em;
+    color: #FF66C4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.photo-container {
+    text-align: center; /* Centers the image horizontally */
+    margin-top: 20px;
+}
+
+.profile-pic {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Gallery Section */
+#gallery {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 80px; /* space between the grid items */
+    justify-items: center;
+}
+
+.photo-item {
+        max-width: 100%;
+        height: auto;
+        display: block;
+}
+
+.photo-item img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.photo-item p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.instagram-media {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Space between posts */
+    justify-content: space-around; /* Adjust to align posts (flex-start, center, etc.) */
+}
+
+.instagram-content {
+    flex: 1 1 300px; /* Make each post flexible with a minimum width */
+    max-width: 540px; /* Maximum width constraint */
+    box-sizing: border-box; /* Ensure padding and borders are included in the width */
+}
+
+.contact-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    margin: 0;
+}
+.btn {
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn i {
+    font-size: 24px;
+}
+
+/* Email Button */
+.email-btn {
+    background-color: lightgreen;
+    color: white;
+}
+
+.email-btn:hover {
+    background-color: #048448;
+}
+
+/* Instagram Button */
+.instagram-btn {
+    background-color: #FF66C4;
+    color: white;
+}
+
+.instagram-btn:hover {
+    background-color: #ae1372;
+}
