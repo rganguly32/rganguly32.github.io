@@ -1,5 +1,7 @@
 /* Reset some default styles */
-body, h1, ul {
+body,
+h1,
+ul {
     margin: 0;
     padding: 0;
 }
@@ -7,14 +9,17 @@ body, h1, ul {
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 120px;
-}  
+}
 
 body {
     background: whitesmoke;
     height: auto;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-    position: relative; /* Ensure sections are positioned correctly */
-    z-index: 1; /* Default stacking order */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+    position: relative;
+    /* Ensure sections are positioned correctly */
+    z-index: 1;
+    /* Default stacking order */
 }
 
 .content {
@@ -22,9 +27,10 @@ body {
     margin-top: 120px;
 }
 
-h2, h3 {
+h2,
+h3 {
     color: #048448;
-    justify-content: center; 
+    justify-content: center;
     text-align: center;
 }
 
@@ -49,15 +55,18 @@ nav {
 nav ul {
     list-style-type: none;
     display: flex;
-    gap: 40px; /* Space between the links */
+    gap: 40px;
+    /* Space between the links */
 }
 
 nav ul li {
-    position: relative; /* Important for dropdown positioning */
+    position: relative;
+    /* Important for dropdown positioning */
 }
 
 nav ul li a {
-    text-decoration: none; /* Remove the underline */
+    text-decoration: none;
+    /* Remove the underline */
     color: white;
     font-size: 1.2em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -67,14 +76,21 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: lightgreen; /* Add a hover effect */
+    background-color: lightgreen;
+    /* Add a hover effect */
 }
 
 /* Logo styling */
 .logo img {
-    height: 60px; /* Adjust the height of the logo */
+    height: 60px;
+    /* Adjust the height of the logo */
     width: auto;
-    margin-right: auto; /* Align logo to the left */
+    margin-right: auto;
+    /* Align logo to the left */
+}
+
+.logo a:hover {
+    background-color: #048448;
 }
 
 /* Dropdown Menu */
@@ -85,7 +101,8 @@ nav ul li a:hover {
     min-width: 160px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    top: 100%; /* Position it below the "Hobbies" link */
+    top: 100%;
+    /* Position it below the "Hobbies" link */
     left: 0;
 }
 
@@ -94,7 +111,8 @@ nav ul li a:hover {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    white-space: nowrap; /* Prevent text wrapping */
+    white-space: nowrap;
+    /* Prevent text wrapping */
 }
 
 .dropdown-content a:hover {
@@ -102,12 +120,14 @@ nav ul li a:hover {
 }
 
 .dropdown:hover .dropdown-content {
-    display: block; /* Show dropdown when hovering over "Services" */
+    display: block;
+    /* Show dropdown when hovering over "Services" */
 }
 
 /* Title */
 .title-container {
-    margin-top: 30px; /* Push the title below the nav bar */
+    margin-top: 30px;
+    /* Push the title below the nav bar */
     text-align: center;
     padding: 50px 20px;
     /* height: 100vh; */
@@ -121,7 +141,8 @@ nav ul li a:hover {
 }
 
 .photo-container {
-    text-align: center; /* Centers the image horizontally */
+    text-align: center;
+    /* Centers the image horizontally */
     margin-top: 20px;
 }
 
@@ -137,17 +158,20 @@ nav ul li a:hover {
     padding: 50px 0;
 }
 
-.photo-gallery {
+.photo-gallery,
+.instagram-posts {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    gap: 80px; /* space between the grid items */
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns */
+    gap: 50px;
+    /* space between the grid items */
     justify-items: center;
 }
 
 .photo-item {
-        max-width: 100%;
-        height: auto;
-        display: block;
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 .photo-item img {
@@ -166,14 +190,19 @@ nav ul li a:hover {
 .instagram-media {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px; /* Space between posts */
-    justify-content: space-around; /* Adjust to align posts (flex-start, center, etc.) */
+    gap: 50px;
+    /* Space between posts */
+    justify-content: space-around;
+    /* Adjust to align posts (flex-start, center, etc.) */
 }
 
 .instagram-content {
-    flex: 1 1 300px; /* Make each post flexible with a minimum width */
-    max-width: 540px; /* Maximum width constraint */
-    box-sizing: border-box; /* Ensure padding and borders are included in the width */
+    flex: 1 1 300px;
+    /* Make each post flexible with a minimum width */
+    max-width: 540px;
+    /* Maximum width constraint */
+    box-sizing: border-box;
+    /* Ensure padding and borders are included in the width */
 }
 
 .contact-buttons {
@@ -188,6 +217,7 @@ nav ul li a:hover {
     height: 10vh;
     margin: 0;
 }
+
 .btn {
     text-decoration: none;
     padding: 15px 30px;
