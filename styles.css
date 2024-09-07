@@ -171,8 +171,8 @@ nav ul li a:hover {
 .photo-gallery,
 .instagram-posts {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* 3 columns */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    flex-wrap: wrap; 
     gap: 50px;
     /* space between the grid items */
     justify-items: center;
@@ -180,9 +180,7 @@ nav ul li a:hover {
 
 .instagram-posts {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    /* 3 columns */
     flex-wrap: wrap; 
-    /* Wrap embeds if there's no space */
 }
 
 .photo-item {
