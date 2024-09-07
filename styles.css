@@ -105,7 +105,7 @@ nav ul li a:hover {
 
 /* Dropdown Menu */
 .dropdown-content {
-    display: flex;
+    display: none;
     position: absolute;
     background-color: #048448;
     min-width: 160px;
@@ -130,7 +130,7 @@ nav ul li a:hover {
 }
 
 .dropdown:hover .dropdown-content {
-    display: flex;
+    display: block;
     /* Show dropdown when hovering over "Services" */
 }
 
