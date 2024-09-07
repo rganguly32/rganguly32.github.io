@@ -9,11 +9,13 @@ ul {
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 120px;
+    width: 100%;
 }
 
 body {
     background: whitesmoke;
     height: auto;
+    width: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: justify;
     position: relative;
@@ -60,6 +62,8 @@ nav ul {
     display: flex;
     gap: 40px;
     /* Space between the links */
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
@@ -78,6 +82,7 @@ nav ul li a {
     font-weight: bold;
     padding: 10px 15px;
     transition: background-color 0.3s ease;
+    display: flex;
 }
 
 nav ul li a:hover {
@@ -100,7 +105,7 @@ nav ul li a:hover {
 
 /* Dropdown Menu */
 .dropdown-content {
-    display: none;
+    display: flex;
     position: absolute;
     background-color: #048448;
     min-width: 160px;
@@ -115,7 +120,7 @@ nav ul li a:hover {
     color: white;
     padding: 12px 16px;
     text-decoration: none;
-    display: block;
+    display: flex;
     white-space: nowrap;
     /* Prevent text wrapping */
 }
@@ -125,7 +130,7 @@ nav ul li a:hover {
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+    display: flex;
     /* Show dropdown when hovering over "Services" */
 }
 
@@ -152,7 +157,7 @@ nav ul li a:hover {
 }
 
 .profile-pic {
-    width: 500px;
+    width: 100%;
     height: auto;
     border-radius: 10px;
 }
