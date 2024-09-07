@@ -173,6 +173,13 @@ nav ul li a:hover {
     justify-items: center;
 }
 
+.instagram-posts {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* 3 columns */
+    flex-wrap: wrap; 
+    /* Wrap embeds if there's no space */
+}
+
 .photo-item {
     max-width: 100%;
     height: auto;
