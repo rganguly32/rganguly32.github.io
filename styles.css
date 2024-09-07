@@ -22,6 +22,7 @@ body {
     /* Default stacking order */
 }
 
+
 .content {
     padding: 20px;
     margin-top: 120px;
@@ -29,12 +30,14 @@ body {
 
 h2,
 h3 {
+    font-size: xx-large;
     color: #048448;
     justify-content: center;
     text-align: center;
 }
 
 h3 {
+    font-size: x-large;
     color: #008D6F;
 }
 
@@ -62,6 +65,8 @@ nav ul {
 nav ul li {
     position: relative;
     /* Important for dropdown positioning */
+    display: flex;
+    align-items: center;
 }
 
 nav ul li a {
@@ -129,7 +134,7 @@ nav ul li a:hover {
     margin-top: 30px;
     /* Push the title below the nav bar */
     text-align: center;
-    padding: 50px 20px;
+    padding: 50px 10px;
     /* height: 100vh; */
     align-items: center;
 }
