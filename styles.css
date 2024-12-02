@@ -136,7 +136,6 @@ nav ul li a:hover {
 
 .dropdown:hover .dropdown-content {
     display: block;
-    /* Show dropdown when hovering over "Services" */
 }
 
 /* Title */
