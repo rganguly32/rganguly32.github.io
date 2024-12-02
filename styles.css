@@ -34,6 +34,7 @@ body {
     color: black;
 }
 
+
 h2,
 h3 {
     font-size: xx-large;
@@ -141,7 +142,6 @@ nav ul li a:hover {
 .title-container {
     text-align: center;
     padding: 50px 10px;
-    margin-bottom: 40px;
     /* height: 100vh; */
     align-items: center;
 }
@@ -150,6 +150,7 @@ nav ul li a:hover {
     font-size: 3em;
     color: #FF66C4;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 70px;
 }
 
 .photo-container {
@@ -222,21 +223,27 @@ nav ul li a:hover {
     /* Ensure padding and borders are included in the width */
 }
 
-.contact-buttons {
-    display: flex;
-    gap: 20px;
-}
-
 .contact {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10vh;
-    margin: 0;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.contact-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 400px; /* Optional: limit width */
 }
 
 .btn {
+    width: 100%;
     text-decoration: none;
+    flex-direction: column;
     padding: 15px 30px;
     border-radius: 5px;
     font-size: 18px;
@@ -253,12 +260,13 @@ nav ul li a:hover {
 
 /* Email Button */
 .email-btn {
-    background-color: rgb(102, 235, 102);
+    background-color: #048448;
     color: white;
 }
 
 .email-btn:hover {
-    background-color: #048448;
+    background-color: #0a462a;
+    ;
 }
 
 /* Instagram Button */
@@ -268,6 +276,26 @@ nav ul li a:hover {
 }
 
 .instagram-btn:hover {
+    background-color: #ae1372;
+}
+
+/* Linkedin Button */
+.linkedin-btn {
+    background-color: #048448;
+    color: white;
+}
+
+.linkedin-btn:hover {
+    background-color: #0a462a;
+}
+
+/* Resume Button */
+.resume-btn {
+    background-color: #FF66C4;
+    color: white;
+}
+
+.resume-btn:hover {
     background-color: #ae1372;
 }
 
