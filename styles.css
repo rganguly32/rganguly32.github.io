@@ -20,9 +20,68 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: justify;
     position: relative;
-    /* Ensure sections are positioned correctly */
     z-index: 1;
-    /* Default stacking order */
+}
+
+/* Hero Section Styles */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 80vh; /* Full viewport height */
+    background-image: url('ProfilePic.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -60px; /* Offset for fixed navigation */
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    color: #FF66C4; /* Using your existing pink color */
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: justify;
+    margin-top: 230px;
+    background-color: rgba(4, 132, 72, 0.464);
+    color: white;
+    padding: 40px;
+    width: 700px;
+    height: 300px;
+    max-width: 1200px; /* Maximum width */
+    box-sizing: border-box;
+    word-wrap: break-word; /* Ensure long words break */
+    overflow-wrap: break-word; /* Alternative for word wrapping */
+}
+
+/* Responsive Hero Section */
+@media (max-width: 768px) {
+    .hero-content p {
+        width: 95%;
+        padding: 20px;
+        font-size: 1em;
+    }
+
+    .hero-content h1 {
+        font-size: 2em;
+    }
 }
 
 * {
@@ -30,10 +89,16 @@ body {
 }
 
 .content {
-    padding: 20px;
+    max-width: 800px; /* Limit content width for better readability */
+    margin: 0 auto; /* Center the content */
+    padding: 40px 20px; /* Increase vertical padding */
+    line-height: 1.6; /* Improve line spacing */
     color: black;
 }
 
+.content p {
+    margin-bottom: 20px; /* Add space between paragraphs */
+}
 
 h2,
 h3 {
@@ -41,6 +106,7 @@ h3 {
     color: #048448;
     justify-content: center;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 h3 {
@@ -141,8 +207,8 @@ nav ul li a:hover {
 /* Title */
 .title-container {
     text-align: center;
-    padding: 50px 10px;
-    /* height: 100vh; */
+    padding: 30px 10px; /* Reduced padding */
+    margin-bottom: 40px;
     align-items: center;
 }
 
@@ -150,19 +216,24 @@ nav ul li a:hover {
     font-size: 3em;
     color: #FF66C4;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-bottom: 70px;
 }
 
 .photo-container {
+    flex: 0 0 40%; /* Take up 40% of the container width */
     text-align: center;
-    /* Centers the image horizontally */
-    margin-top: 20px;
+    
 }
 
 .profile-pic {
-    width: 40vw;
+    width: 70%; /* Responsive width */
+    max-width: 300px; /* Limit max width */
     height: auto;
     border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Optional: add subtle shadow */
+}
+
+.text-container {
+    flex: 1; /* Take up remaining space */
 }
 
 /* Gallery Section */
@@ -342,6 +413,29 @@ nav ul li a:hover {
 }
 
 @media (max-width: 768px) {
+    .project-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .content {
+        padding: 20px 15px; /* Reduce padding on smaller screens */
+    }
+    
+    .profile-pic {
+        width: 90%; /* Slightly wider on mobile */
+        max-width: 350px;
+    }
+
+    .photo-container {
+        flex: none;
+        width: 100%;
+        max-width: 350px;
+    }
+
+    /* Existing media query for project content */
     .project-content {
         grid-template-columns: 1fr;
     }
